@@ -1,1 +1,1 @@
-light-server-pug -o -s . -w "*.pug # pug --pretty index.pug -o ." -w "*.css # # reload"
+light-server-pug -o -s dist -w "pages/**/*.pug # pug pages --pretty -o dist" -w "dist/**/*.css # # reload"
