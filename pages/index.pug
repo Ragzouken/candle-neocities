@@ -1,12 +1,13 @@
 extends includes/layout.pug
 
-block header
-    h1 candle's website
-    p this is my website where i put things related to digital creative tools and communities around them
+append header
     .links
         a(href="http://candle.itch.io/") play my games
         a(href="https://twitter.com/ragzouken") talk to me on twitter
         a(href="mailto:ragzouken+neocities@gmail.com") contact me by email
+
+block footer
+    include includes/webring.pug
 
 block content
     h2 new
