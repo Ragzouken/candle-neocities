@@ -1,0 +1,105 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0 }
+
+:root {
+    font-size: 20px;
+    font-family: 'Anonymous Pro', monospace;
+    color: white;
+
+    --background-color: #792368;
+
+    --overlay-background: rgb(0 0 0 / 85%);
+}
+
+a         { color: white;   }
+a:visited { color: #aaaaaa; }
+a:hover   { color: red;     }
+
+html {
+    background: url('./world-of-bitsy.jpg');
+    background-position-x: center;
+    background-size: 200%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+#column {
+    width: 100%;
+    max-width: 35em;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+h2 { font-size: 1.2em; }
+h3 { margin-top: 0; }
+p { margin-bottom: 0; }
+
+h1, h2, #column > p, .webring > *, .links > *, section {
+    color: white;
+    margin: 0;
+    padding: 1rem 1rem;
+    background: var(--overlay-background);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+ul, h3, p {
+    margin: 0;
+}
+
+li {
+    margin: 1em 0;
+}
+
+em {
+    color: red;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-content: stretch;
+    justify-content: space-evenly;
+
+    gap: 1em;
+}
+
+.webring {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+
+    gap: 1em;
+}
+
+.webring > .banner {
+    padding: 0;
+}
+
+.webring > .banner > img {
+    display: block;
+}
+
+.webring > * {
+    white-space: nowrap;
+}
+
+.webring > * { white-space: nowrap; }
