@@ -4,18 +4,21 @@ html, body { margin: 0; padding: 0 }
 :root {
     font-size: 20px;
     font-family: 'Anonymous Pro', monospace;
-    color: white;
+    
+    --text-color: #CCCCCC;
 
     --background-color: #792368;
 
-    --overlay-background: rgb(0 0 0 / 85%);
+    --overlay-background: rgb(0 0 0 / 100%);
 }
 
-a         { color: white;   }
-a:visited { color: #aaaaaa; }
+a         { color: #FFAAAA;   }
+a:visited { color: #808080; }
 a:hover   { color: red;     }
 
 html {
+    color: var(--text-color);
+
     background: url('./world-of-bitsy.jpg');
     background-position-x: center;
     background-size: 200%;
@@ -43,7 +46,6 @@ h3 { margin-top: 0; }
 p { margin-bottom: 0; }
 
 h1, h2, #column > p, .webring > *, .links > *, section {
-    color: white;
     margin: 0;
     padding: 1rem 1rem;
     background: var(--overlay-background);
@@ -73,9 +75,9 @@ em {
     flex-wrap: wrap;
     
     align-content: stretch;
-    justify-content: space-evenly;
+    justify-content: center;
 
-    gap: 1em;
+    gap: .5em;
 }
 
 .webring {
